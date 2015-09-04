@@ -1,0 +1,53 @@
+<section class="top sec-slide">
+<style type="text/css">
+    .basicBox {
+  width: 200px;
+  height: 80px;
+  display: block;
+  margin: 90px auto 0 !important;
+  color: #4274D3;
+  font-family: sans-serif;
+  font-size: 1.15rem !important;
+  line-height: 80px !important;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+    }
+
+    .basicBox svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .basicBox svg rect {
+      fill: none;
+      stroke: #4274D3;
+      stroke-width: 1;
+      stroke-dasharray: 560, 0;
+      -webkit-transition: all 0.8s ease-in-out;
+      -moz-transition: all 0.8s ease-in-out;
+      -ms-transition: all 0.8s ease-in-out;
+      -o-transition: all 0.8s ease-in-out;
+    }
+
+    .basicBox:hover svg rect {
+      stroke-width: 3;
+      stroke-dasharray: 120, 315;
+      stroke-dashoffset: 120;
+      -webkit-transition: all 0.8s ease-in-out;
+      -moz-transition: all 0.8s ease-in-out;
+      -ms-transition: all 0.8s ease-in-out;
+      -o-transition: all 0.8s ease-in-out;
+    }
+</style>
+    <h3>Dasharray e dashoffset</h3>
+    <a href="#" class="basicBox">
+      Hover
+      <svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x='0' y='0' width='200' height='80'/>
+      </svg>
+    </a>
+    <br/>
+    <a href="http://codepen.io/willianjusten/pen/NGPgeY">Link do Codepen</a>
+</section>

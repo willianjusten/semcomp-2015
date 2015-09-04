@@ -1,0 +1,88 @@
+<section class="top sec-slide">
+    <h3>Animações com Smill</h3>
+
+    <style type="text/css">
+        button {
+          background: #95a5a6;
+          border: 0;
+          border-radius: 4px;
+          padding: 30px;
+          margin: 70px;
+          display: inline-block;
+          outline: 0;
+          width: 250px;
+          text-align: center;
+          cursor: pointer;
+        }
+        button:hover {
+          background: #7f8c8d;
+        }
+        button svg {
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+        button span {
+          font-size: 3.5em !important;
+          position: relative;
+          top: 10px;
+          color: white;
+        }
+    </style>
+
+    <button id="button">
+  
+      <svg viewBox="0 0 194.6 185.1">
+        
+        <polygon fill="#FFD41D" points="97.3,0 127.4,60.9 194.6,70.7 145.9,118.1 157.4,185.1 97.3,153.5 37.2,185.1 48.6,118.1 0,70.7 
+        67.2,60.9">
+          
+          <animate id="animation-to-check" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="110,58.2 147.3,0 192.1,29 141.7,105.1 118.7,139.8 88.8,185.1 46.1,156.5 0,125 23.5,86.6 
+        71.1,116.7"/>
+          
+          <animate id="animation-to-green" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="#32db78"></animate>
+          
+          <animate id="animation-to-star" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="97.3,0 127.4,60.9 194.6,70.7 145.9,118.1 157.4,185.1 97.3,153.5 37.2,185.1 48.6,118.1 0,70.7 
+        67.2,60.9"/>
+          
+          <animate id="animation-to-yellow" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="#FFD41D"></animate>
+          
+        </polygon>
+        
+      </svg>
+      
+      <span id="button-text">Salvar</span>
+      
+    </button>
+    <br/>
+    <a href="http://willianjusten.com.br/animando-svg-com-smil/">Tutorial no blog</a><br />
+    <a href="http://codepen.io/willianjusten/pen/BNOJON">Link no codepen</a>
+
+    <script type="text/javascript">
+        var icon = document.getElementById("button"),
+            buttonText = document.getElementById("button-text"),
+            animationToCheck = document.getElementById("animation-to-check"),
+            animationToGreen = document.getElementById("animation-to-green"),
+            animationToStar = document.getElementById("animation-to-star"),
+            animationToYellow = document.getElementById("animation-to-yellow");
+
+        button.addEventListener('click', function() {
+          
+          if (button.classList.contains("salvo")) {
+            button.classList.remove("salvo");
+            animationToStar.beginElement();
+            animationToYellow.beginElement();
+            buttonText.innerHTML = "Salvar";
+          } else {
+            button.classList.add("salvo");
+            animationToCheck.beginElement();
+            animationToGreen.beginElement();
+            buttonText.innerHTML = "Salvo!";
+          }
+          
+        }, false);
+    </script>
+
+</section>

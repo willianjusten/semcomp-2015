@@ -2,7 +2,7 @@
 
 ## Instalando
 
-[Veja a Demo](http://willianjusten.com.br/semcomp-2015/).
+[Veja a apresentação](http://willianjusten.com.br/semcomp-2015/).
 
 Primeiro de tudo, instale as depdências para rodar os slides em sua máquina.
 
